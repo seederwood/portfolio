@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Google</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
@@ -13,14 +14,107 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
   </head>
-  <body>
-    <div class="header"><div>
-    <div class="main"></div>
-    <div id="about"></div>
-    <div id="portfolio"></div>
+
+  <body data-spy="scroll" data-target="#spy-scroll-id">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div clas="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#spy-scroll-id">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Raymond Climie</a>
+        </div>
+        <div class="collapse navbar-collapse" id="spy-scroll-id">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron" id="about">
+      <div class="container text-center">
+        <h1>My Portfolio</h1>
+        <p>This is about me...</p>
+        <p>I am currently learning both front-end <span class="text-info">(HTML5, CSS3/4, JS, JQuery, etc)</span> and back-end <span class="text-info">(AJAX, php, etc)</span> programming and best practices</p>
+      </div>
+    </div>
+
+
+    <div class="container-fluid text-center" id="portfolio">
+      <h2>Some of my Work</h2><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="assets/abba_trib.png" class="img-responsive" style="width:100%" alt="Abba Tribute Site">
+          <p>A description of one of my works or works in progress</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+      </div>
+    </div><br>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="assets/abba_trib.png" class="img-responsive" style="width:100%" alt="Image">
+          <p>A description of one of my completed works or works in progress</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>A description of one of my works or works in progress</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>A description of one of my works or works in progress</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Description...</p>
+        </div>
+      </div>
+    </div><br>
+
     <div id="contact"></div>
     <div class="footer"></div>
   </body>

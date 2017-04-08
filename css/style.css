@@ -1,10 +1,26 @@
 /* CSS Styles */
 
-.header {
+
+li a
+{
+  margin-right: 15px;
+  color: #FFFFFF;
+  /*font-family: "Gill Sans", Helvetica, sans-serif;*/
+  font-size: 1.2em;
+  margin-left: 10px;
 }
 
-.main {
+.jumbotron, #portfolio h2, li a, p
+{
+font-family: Tahoma, Helvetica, sans-serif;
 }
 
-.footer {
+img
+{
+  border: 1px solid #f9f9f9;
+}
+
+.bg-3
+{
+  background-color: green;
 }
