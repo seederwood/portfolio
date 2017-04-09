@@ -10,17 +10,17 @@ li a
   margin-left: 10px;
 }
 
-.jumbotron, #portfolio h2, li a, p
+.jumbotron, #portfolio h2, li a, p, nav
 {
 font-family: Tahoma, Helvetica, sans-serif;
 }
 
-img
+#portfolio img.gallery
 {
-  border: 1px solid #f9f9f9;
+  border: 3px solid #pink;
 }
 
-.bg-3
+#contact h2
 {
-  background-color: green;
+  text-align: center;
 }
