@@ -1,9 +1,16 @@
-* {
+*
+{
   box-sizing: border-box;
 }
 
-html {
+html
+{
   font: 14px/1.4 Sans-Serif;
+}
+
+body
+{
+  background-color: #edebe6;
 }
 
 #myNavbar
@@ -13,6 +20,7 @@ html {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     z-index:999;
 }
+
 li a
 {
   margin-right: 15px;
@@ -62,20 +70,21 @@ form input, form textarea
   left: 0;
   z-index: 1;
   padding: 8px 12px;
+  margin-bottom: 5px;
   outline: 0;
 }
-form input#email
+form input#email, form input#email:focus
 {
   border-radius: 0;
 }
 
-form input#name
+form input#name, form input#name:focus
 {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-form textarea
+form textarea, form textarea:focus + label
 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -86,13 +95,13 @@ form input:valid, form textarea:valid
 }
 form input:focus, form textarea:focus
 {
-  border-color: #f06d06;
+  border-color: #447243;
 }
 form input:focus + label, form textarea:focus + label {
-  background: #f06d06;
+  background: #447243;
   color: white;
   font-size: 70%;
-  padding: 1px 6px;
+  padding: 1px 6px 5px 6px;
   z-index: 2;
   text-transform: uppercase;
 }
@@ -112,12 +121,12 @@ form.go-bottom input, form.go-bottom textarea {
 }
 form.go-bottom label {
   top: 0;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   width: 100%;
 }
 form.go-bottom input:focus, form.go-bottom textarea:focus {
-  padding: 4px 6px 20px 6px;
+  padding: 4px 6px 12px 6px;
 }
 form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
   top: 100%;
