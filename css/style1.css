@@ -1,42 +1,45 @@
-*
-{
-  box-sizing: border-box;
-}
-
-html
-{
-  font: 14px/1.4 Sans-Serif;
-}
 
 body
 {
-  background-color: #edebe6;
+  position: relative;
 }
 
-#myNavbar
+.navshadow
 {
-  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-    z-index:999;
+  box-shadow: 0 8px 8px rgba(191, 192, 193, 0.5);
+  background-color: #206e13;
 }
 
-li a
+
+#myNavbar  li > a,
+.navbar a.brand
 {
-  margin-right: 15px;
-  color: #FFFFFF;
-  /*font-family: "Gill Sans", Helvetica, sans-serif;*/
-  font-size: 1.2em;
-  margin-left: 10px;
+  color: #fff;
 }
 
-.jumbotron, #portfolio h2, li a, p, nav
+#myNavbar  li > a:hover,
+#myNavbar  li > a:active,
+#myNavbar  li > a:focus
+.navbar a.brand:hover
 {
-font-family: Tahoma, Helvetica, sans-serif;
+  color: #c0c0c0;
+  text-shadow: 2px 2px 8px #c0c0c0;
+  background-color: #1f4418;
+}
+
+#portfolio h2, li a, p, nav
+{
+font: 400 16px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+div.jumbo
+{
+  background: white;
 }
 
 .portfoliohead, .jumbotron .headline
 {
+  font-family: "Droid Sans", sans-serif;
   background-color: #565656;
   color: transparent;
   text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
@@ -44,6 +47,7 @@ font-family: Tahoma, Helvetica, sans-serif;
      -moz-background-clip: text;
           background-clip: text;
 }
+
 #contact h2
 {
   text-align: center;
@@ -97,7 +101,8 @@ form input:focus, form textarea:focus
 {
   border-color: #447243;
 }
-form input:focus + label, form textarea:focus + label {
+form input:focus + label, form textarea:focus + label
+{
   background: #447243;
   color: white;
   font-size: 70%;
@@ -105,35 +110,42 @@ form input:focus + label, form textarea:focus + label {
   z-index: 2;
   text-transform: uppercase;
 }
-form label {
+form label
+{
   transition: background 0.5s, color 0.5s, top 0.5s, bottom 0.5s, right 0.5s, left 0.5s;
   position: absolute;
   color: #999;
   padding: 7px 6px;
 }
-form textarea {
+form textarea
+{
   display: block;
   resize: vertical;
 }
 
-form.go-bottom input, form.go-bottom textarea {
+form.go-bottom input, form.go-bottom textarea
+{
   padding: 12px 12px 12px 12px;
 }
-form.go-bottom label {
+form.go-bottom label
+{
   top: 0;
   bottom: -4px;
   left: 0;
   width: 100%;
 }
-form.go-bottom input:focus, form.go-bottom textarea:focus {
+form.go-bottom input:focus, form.go-bottom textarea:focus
+{
   padding: 4px 6px 12px 6px;
 }
-form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
+form.go-bottom input:focus + label, form.go-bottom textarea:focus + label
+{
   top: 100%;
   margin-top: -16px;
 }
 
-.boxshadow {
+.boxshadow
+{
     position: relative;
     -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
@@ -143,13 +155,15 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
 }
 
 /* Make the image fit the box */
-.boxshadow img {
+.boxshadow img
+{
     width: 100%;
     border: 1px solid #447243;
     border-style: inset;
 }
 
-.boxshadow::after {
+.boxshadow::after
+{
     content: '';
     position: absolute;
     z-index: -1; /* hide shadow behind image */
@@ -162,7 +176,8 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
     bottom: 0;
 }
 
-[class*="col-"] {
+[class*="col-"]
+{
     background-clip: padding-box;
     border: 10px solid transparent;
 }
