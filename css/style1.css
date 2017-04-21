@@ -2,29 +2,45 @@
 body
 {
   position: relative;
+  background-image: url("assets/b.jpg");
+  background-attachment: fixed;
+  z-index: 14;
 }
+
 
 .navshadow
 {
-  box-shadow: 0 8px 8px rgba(191, 192, 193, 0.5);
-  background-color: #206e13;
+  box-shadow: 0 8px 8px rgba(65, 65, 65, 0.5);
 }
 
+#myNavbar li.active > a
+{
+  background-image: -webkit-linear-gradient(to top, #db3881, #45ece4);
+  background-image: linear-gradient(to top, #db3881, #45ece4);
+  box-shadow: 0px 0px 4px #646464 inset;
+  color: #000;
+  text-shadow: 0px 10px 10px #000;
+}
 
-#myNavbar  li > a,
+#myNavbar li > a:hover,
+#myNavbar li > a:focus,
+.navbar a.brand:hover
+{
+  color: #000;
+  text-shadow: 0px 10px 10px #000;
+}
+
+.navbar
+{
+  background-image: -webkit-linear-gradient(to bottom, #db3881, #45ece4);
+  background-image: linear-gradient(to bottom, #db3881, #45ece4);
+}
+
+#myNavbar li > a,
 .navbar a.brand
 {
   color: #fff;
-}
-
-#myNavbar  li > a:hover,
-#myNavbar  li > a:active,
-#myNavbar  li > a:focus
-.navbar a.brand:hover
-{
-  color: #c0c0c0;
-  text-shadow: 2px 2px 8px #c0c0c0;
-  background-color: #1f4418;
+  text-shadow: 0px 0px 4px #000;
 }
 
 #portfolio h2, li a, p, nav
