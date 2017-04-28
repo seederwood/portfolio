@@ -11,7 +11,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -23,136 +24,14 @@
     <script src="js/smooth-scroll.js"></script>
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body>
 
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid navshadow navbar-grad">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand brand" href="#">Raymond Climie</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About Me</a></li><!--
-         --><li><a href="#portfolio">Portfolio</a></li><!--
-         --><li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="jumbotron data-scroll" id="about">
-      <div class="container text-center">
-        <h1 class="headline">My Portfolio</h1>
-        <p>This is about me...</p>
-        <p>I am currently learning both front-end <span class="text-info">(HTML5, CSS3/4, JS, JQuery, etc)</span> and back-end <span class="text-info">(AJAX, php, etc)</span> programming and best practices</p>
-      </div>
-    </div>
-
-    <section id="portfolio">
-    <div class="container-fluid text-center data-scroll">
-      <h1 class="portfoliohead">Some of my Work</h1><br>
-      <div class="row">
-        <div class="col-sm-4 gallery boxshadow">
-          <a href="https://seederwood.github.io/abba_tribute/" target="_blank"><img src="http://www.billboard.com/files/styles/article_main_image/public/media/abba-portrait-bw-1970-billboard-1548.jpg" class="img-responsive" style="width:100%" alt="Abba Tribute Site"></a>
-          <p>A tribute page for the Free Code Camp project</p>
-        </div>
-        <div class="col-sm-4 gallery boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive gallery" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-        <div class="col-sm-4  boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-      </div>
-    </div>
-  </section><br>
-
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>A description of one of my works or works in progress</p>
-        </div>
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-      </div>
-    </div><br>
-
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>A description of one of my works or works in progress</p>
-        </div>
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-      </div>
-    </div><br>
-
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-        <div class="col-sm-4 boxshadow">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Description...</p>
-        </div>
-      </div>
-    </div><br>
-
-  <div class="container-fluid text-center">
-    <div class="data-scroll" id="contact">
-      <h1 class="portfoliohead">Contact Me</h1>
-
-        <form class="go-bottom">
-          <div>
-            <input id="name" name="name" type="text" required>
-            <label for="name">Your Name</label>
-          </div>
-          <div>
-            <input id="email" name="email" type="email" required>
-            <label for="email">Email</label>
-          </div>
-          <div>
-            <textarea id="message" name="message" required></textarea>
-            <label for="message">Message</label>
-          </div>
-          <button type="reset" class="btn btn-stripe">Reset</button>
-          <button type="submit" class="btn btn-stripe">Submit</button>
-        </form>
-      </div>
-    </div><br>
-
-
-
-
-    <div class="footer"></div>
-
+    <ul class="nav nav-pills">
+      <li> <a href="#">Raymond B. Climie, Jr.</a> </li>
+      <li class="pull-right"> <a href="#">Contact Me</a></li>
+      <li class="pull-right"> <a href="#">Portfolio</a></li>
+      <li class="pull-right"> <a href="#">About Me</a></li>
+    </ul>
 
   </body>
 </html>
