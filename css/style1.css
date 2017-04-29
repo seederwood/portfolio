@@ -1,3 +1,8 @@
+html{
+  position: relative;
+  min-height: 100%;
+}
+
 .nav-pills{
   font-family: Montserrat;
   font-size: 1.8em;
@@ -8,7 +13,6 @@
 
 .pageOne{
   background:url("https://static.pexels.com/photos/59628/pexels-photo-59628.jpeg");
-  -webkit-background-size: cover;
   background-size: cover;
   padding-bottom: 10%;
  }
@@ -35,9 +39,14 @@
 
 }
 
-body{
-  font-family: Montserrat;
+.pageOne, .pageTwo, .pageThree, .pageFour{
+  font-family: "Libre Baskerville", serif;
   color: white;
+}
+
+body, footer, h1{
+  color: white;
+  margin-bottom: 6-px;
 }
 
 .mainHead {
@@ -45,8 +54,11 @@ body{
   margin-top: 0px;
   font-size: 4.5em;
 }
+a, p, .block h3, h1+h2{
+  font-family: "Libre Franklin", sans-serif;
+}
 
-.btn-default{
+a.btn-default{
   background-color: black;
   border-color: black;
   border-radius: 10px;
@@ -63,6 +75,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin-bottom:  10px;
+  margin-top: 138px;
   border-radius:  25px;
 }
 
@@ -74,7 +87,8 @@ p{
 .me{
   width: 75%;
   margin: 0 auto;
-  border-radius: 45%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 
@@ -99,6 +113,7 @@ p{
   padding-bottom: 2%;
   width: 250px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .paddingTop{
@@ -108,14 +123,17 @@ p{
 
 
 
-.footer{
+footer{
   background-color: black;
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
+  z-index: 2;
+
 }
 
-.footer>p{
-  margin-top: 10px;
+footer p{
+  margin-top: -25px;
   font-size: 11px;
 }
